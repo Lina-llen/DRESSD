@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DRESSD — Garde-robe numérique interactive</title>
+  <meta name="description" content="Centralisez l'ensemble de votre dressing, composez vos tenues en 2D et sachez toujours exactement où se trouve chaque vêtement.">
+
+  <!-- Google Fonts: Syne (Headings), Space Grotesk (Sub-headings), Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- External JavaScript Logic -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER WITH LIGHT GLASSMORPHISM BACKGROUND -->
+  <header class="header glass-header">
+    <div class="header-content">
+      <a href="#" class="brand-logo">
+        <img src="Logo_DRESSD_2.png" alt="DRESSD Logo">
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#pourquoi">Pourquoi DRESSD ?</a></li>
+          <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="connexion.html" class="btn btn-ghost">Se connecter</a>
+        <a href="inscription.html" class="btn btn-primary">S'inscrire</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main style="width: 100%; display: flex; flex-direction: column; align-items: center;">
+    
+    <!-- HERO SECTION (PERFECTLY CENTERED) -->
+    <section class="hero-section">
+      <span class="hero-badge">✦ Garde-robe numérique interactive</span>
+      <h1 class="hero-title">Vos vêtements,<br>enfin sous votre contrôle.</h1>
+      <p class="hero-subtitle">
+        Centralisez l'ensemble de votre dressing, composez vos plus belles tenues en 2D et sachez toujours exactement où se trouve chaque pièce.
+      </p>
+
+      <!-- SHOWCASE STAGE: CENTERED SINGLE-LINE FLOATING CLOTHES -->
+      <div class="hero-marquee-wrapper">
+        
+        <!-- Single Track Scrolling Right to Left -->
+        <div class="marquee-track-single">
+          <div class="cutout-item"><img src="cutout_tshirt.png" alt="T-Shirt noir DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_sweater.png" alt="Pull beige DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_blazer.png" alt="Blazer noir DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_bag.png" alt="Sac en cuir DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_shirt.png" alt="Chemise blanche DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_sneakers.png" alt="Sneakers blanches DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_pants.png" alt="Pantalon beige DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_skirt.png" alt="Jupe noire DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_boots.png" alt="Bottines noires DRESSD"></div>
+
+          <!-- Duplicated set for seamless infinite loop -->
+          <div class="cutout-item"><img src="cutout_tshirt.png" alt="T-Shirt noir DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_sweater.png" alt="Pull beige DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_blazer.png" alt="Blazer noir DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_bag.png" alt="Sac en cuir DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_shirt.png" alt="Chemise blanche DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_sneakers.png" alt="Sneakers blanches DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_pants.png" alt="Pantalon beige DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_skirt.png" alt="Jupe noire DRESSD"></div>
+          <div class="cutout-item"><img src="cutout_boots.png" alt="Bottines noires DRESSD"></div>
+        </div>
+
+        <!-- CENTERED FUTURISTIC GLASSY CTA BUTTON & UNBOXED TAGLINE -->
+        <div class="cta-hero-floating-container">
+          <a href="inscription.html" class="btn-cta-futuristic-glass">
+            <span class="cta-gradient-text">Créer mon dressing gratuitement</span>
+            <span class="arrow-icon">→</span>
+          </a>
+          <p class="cta-tagline-clean">
+            Rejoignez <strong>DRESSD</strong> et donnez une seconde vie à votre garde-robe.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION WHY DRESSD -->
+    <section class="section-why" id="pourquoi">
+      <div class="section-header">
+        <h2>Pourquoi DRESSD existe ?</h2>
+        <p>Une réponse simple et intuitive à un problème quotidien que nous connaissons tous.</p>
+      </div>
+
+      <div class="grid-problems">
+        
+        <div class="glass-card problem-card">
+          <div class="card-icon">📍</div>
+          <h3>Vêtements éparpillés</h3>
+          <p>
+            Entre l'armoire principale, la panière de linge, la valise du week-end ou chez ses proches, il devient difficile de savoir où se trouve chaque vêtement.
+          </p>
+        </div>
+
+        <div class="glass-card problem-card">
+          <div class="glass-card problem-card">
+          <div class="card-icon">💡</div>
+          <h3>L'illusion du "Je n'ai rien à mettre"</h3>
+          <p>
+            Posséder de nombreux vêtements mène souvent à en oublier la majorité. DRESSD vous offre une vue d'ensemble claire pour exploiter pleinement l'ensemble de votre dressing.
+          </p>
+        </div>
+
+        <div class="glass-card problem-card">
+          <div class="card-icon">👗</div>
+          <h3>Composition d'outfits simplifiée</h3>
+          <p>
+            Assemblez virtuellement vos tenues en 2D en quelques clics, sauvegardez vos associations favorites et créez le look idéal sans sortir toutes vos affaires.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION FEATURES -->
+    <section class="section-features" id="fonctionnalites">
+      <div class="section-header">
+        <h2>Fonctionnalités clés</h2>
+        <p>Tout ce dont vous avez besoin pour gérer votre style au quotidien.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="glass-card feature-card">
+          <h3>📱 Numérisation rapide</h3>
+          <p>Ajoutez vos pièces en photo et organisez votre dressing par catégories, couleurs et saisons.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <h3>📍 Suivi d'emplacement</h3>
+          <p>Sachez en un coup d'œil si votre vêtement est rangé, au pressing ou prêté à un ami.</p>
+        </div>
+
+        <div class="glass-card feature-card">
+          <h3>✨ Studio d'essayage 2D</h3>
+          <p>Combinez hauts, bas et chaussures sur un canevas virtuel pour tester de nouveaux styles.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="a-propos">
+    <div class="footer-content">
+      <img src="Logo_DRESSD_2.png" alt="DRESSD Logo" style="height: 28px;">
+      <p>&copy; 2026 DRESSD — Garde-robe numérique interactive. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
